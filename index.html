@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Pokemon Battle</title>
+    <script src="src/index.js"></script>
 </head>
 <body>
-    <p>First commit</p>
+    <h1>Pokemon Arena</h1>
+
+    <section id="pick-your-pokemon">
+        <h2>Select your Pokemon</h2>
+
+        <label for="charizar">Charizar</label>
+        <input type="radio" id="charizar" name="pokemon">
+
+        <label for="squirtle">Squirtle</label>
+        <input type="radio" id="squirtle" name="pokemon">
+
+        <label for="bulbasaur">Bulbasaur</label>
+        <input type="radio" id="bulbasaur" name="pokemon">
+
+        <button id="button-select-player">Select</button>
+    </section>
+
+    <section id="pick-your-power">
+        <h2>Pick your power for the battle.</h2>
+        <p>You have <span>3</span> lives.</p>
+        <p>Your enemy has <span>3</span> lives.</p>
+        <div id="power-options">
+            <button id="select-power-fire">Fire 🔥</button>
+            <button id="select-power-water">Water 💧</button>
+            <button id="select-power-earth">Earth 🌱</button>
+        </div>
+    </section>
+
+    <section id="result-message">
+        <p>You won! you beat your opponent with FIRE over EARTH</p>
+    </section>
+
+    <section id="start-new-game">
+        <button id="button-start-new-game">Play again</button>
+    </section>
 </body>
 </html>
